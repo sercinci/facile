@@ -12,6 +12,7 @@
 <body>
 
 
+<div id="1" data=""></div>
 
 <form action="/cart.php" id="item">
 	<input type="text" name="s" placeholder="Search...">
@@ -24,17 +25,66 @@
 	// Attach a submit handler to the form
 	$( "#item" ).submit(function( event ) {
 
-		// Stop form from submitting normally
+		var itemContent = JSON.stringify(
+					{
+						"title": "Kellogs Coco Pops",
+						"image": "http://img.tesco.com/Groceries/pi/283/5050083545283/IDShot_540x540.jpg",
+						"description": "Kelloggs Coco Pops Cereal 800g",
+						"category": "colazione",
+						"prices": [
+							{
+								"supermarket": "Esselunga",
+								"value": 3.10
+							},
+							{
+								"supermarket": "AuchanSMA",
+								"value": 2.99
+							},
+							{
+								"supermarket": "Ipercoop",
+								"value": 3.14
+							},
+							{
+								"supermarket": "Despar",
+								"value": 3.0
+							},
+							{
+								"supermarket": "Unes",
+								"value": 3.0
+							},
+							{
+								"supermarket": "Conad",
+								"value": 2.50
+							},
+							{
+								"supermarket": "Carrefour",
+								"value": 2.80
+							},
+							{
+								"supermarket": "Pennymarket",
+								"value": 2.90
+							},
+							{
+								"supermarket": "Gigante",
+								"value": 3.20
+							},
+							{
+								"supermarket": "SuperElite",
+								"value": 3.15
+							}
+						]
+					}
+			);
+
 		event.preventDefault();
 
-		// Get some values from elements on the page:
-		var $form = $( this ),
-			term = $form.find( "input[name='s']" ).val(),
-			url = $form.attr( "action" );
-			item = JSON.stringify({"item":{ "title": "title", "value" : 1 }});
-
-		// Send the data using post
-		var posting = $.post( url, item );
+		var posting = $.ajax({
+			type: "POST",
+			contentType: "application/json",
+			url: '/cart.php',
+			data: itemContent,
+			dataType: "json"
+		});
 
 		// Put the results in a div
 		posting.done(function( data ) {

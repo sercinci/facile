@@ -1,14 +1,25 @@
 <?php
 
 session_start();
-var_dump($_POST);
-$data = json_decode($_POST);
-var_dump($data);
+//$postdata =
+//var_dump(file_get_contents("php://input"));
+//$data = json_decode(file_get_contents('php://input'), true);
+//$data =
 
-if (in_array('item', $data)) {
+$data = json_decode(file_get_contents('php://input'), true);
+//var_dump($data);
 
-    $_SESSION['items'][] = $data['item'];
-}
+$_SESSION['items'][] = $data;
 
+
+//var_dump($HTTP_RAW_POST_DATA);
+//$data = json_decode($_POST);
+//var_dump($data);
+//
+//if (in_array('item', $data)) {
+//
+//    $_SESSION['items'][] = $data['item'];
+//}
+//
 echo "Cart:";
 var_dump($_SESSION);
