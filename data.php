@@ -1,5 +1,5 @@
 <?php
-/*
+
 	class Prices {
 		public $supermarket;
 		public $price;
@@ -12,7 +12,7 @@
 		public $category;
 		public $prices;
 	}
-
+/*
 	$arrayProducts = array();
 
 	$product1 = new Products;
@@ -27,21 +27,23 @@
     new RecursiveArrayIterator(json_decode($json, TRUE)),
     RecursiveIteratorIterator::SELF_FIRST);
 
+	$arrayProducts;
 	foreach ($jsonIterator as $key => $val) {
+		$product = new Products;
 		if(!is_array($val)){
-			if($key == "title"){
-				$title = $val;
+			switch($key){
+				case "title":
+					$product->title = $val;
+					break;
+				case "image":
+					break;
 			} 
 			echo "<h1>".$title."</h1>";
-		    if(is_array($val)) {
-		        echo "<br/>";
-		    } else {
-		        echo "<li>".$key." => ".$val."</li>";
-		    }
+		    
 		}
 	}
 
-	echo json_encode($jsonIterator);
+	//echo json_encode($jsonIterator);
 	
 
 ?>

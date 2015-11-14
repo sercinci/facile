@@ -21,7 +21,7 @@ console.log(obj);
 $(document).ready(function(){
 	$.getJSON('data.php', function(data){
 		$.each(data, function(key, val){
-			$('body').next('<h1>'+val.title+'</h1>');
+			$('h1').val(val.title);
 		});
 	});
 });
