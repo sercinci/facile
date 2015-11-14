@@ -89,7 +89,7 @@
 		// Put the results in a div
 		posting.done(function( data ) {
 
-			var content = $( data )
+			var content = $( JSON.parse(data) );
 			$( "#result" ).empty().append( content );
 
 //			var content = $( data ).find( "#content" );
