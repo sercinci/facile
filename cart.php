@@ -1,25 +1,23 @@
 <?php
 
 session_start();
-//$postdata =
-//var_dump(file_get_contents("php://input"));
-//$data = json_decode(file_get_contents('php://input'), true);
-//$data =
-
 $data = json_decode(file_get_contents('php://input'), true);
-//var_dump($data);
-
 $_SESSION['items'][] = $data;
+$arrayProductsPrices =[];
+$products = $_SESSION['items'];
 
+foreach ($products as $key => $val) {
+    foreach ($val as $arraykey => $value) {
+        if(is_array($value)){
+            foreach ($value as $key => $value) {
 
-//var_dump($HTTP_RAW_POST_DATA);
-//$data = json_decode($_POST);
-//var_dump($data);
-//
-//if (in_array('item', $data)) {
-//
-//    $_SESSION['items'][] = $data['item'];
-//}
-//
-echo "Cart:";
-var_dump($_SESSION);
+                in_array($value["supermarket"], $arrayProductsPrices) ?: $arrayProductsPrices[$value["supermarket"]] = 0;
+                $arrayProductsPrices[$value["supermarket"]] += $value["value"];
+            }
+        }
+    }
+}
+
+asort($arrayProductsPrices);
+
+echo json_encode($arrayProductsPrices);
