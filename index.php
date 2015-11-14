@@ -29,7 +29,7 @@ var_dump($_SESSION);
 ?>
 
 
-<form action="index.php">
+<form action="index.php" method="POST">
 	<input type="text" id="title">
 	<input type="text" id="value">
 	<button type="submit"/>
