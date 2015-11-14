@@ -31,9 +31,10 @@
 		var $form = $( this ),
 			term = $form.find( "input[name='s']" ).val(),
 			url = $form.attr( "action" );
+			item = JSON.stringify({"item":{ "title": "title", "value" : 1 }})
 
 		// Send the data using post
-		var posting = $.post( url, { s: term } );
+		var posting = $.post( url, item );
 
 		// Put the results in a div
 		posting.done(function( data ) {
