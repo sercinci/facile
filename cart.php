@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+var_dump($_POST);
 $data = json_decode($_POST);
 var_dump($data);
 
