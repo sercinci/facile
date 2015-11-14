@@ -10,7 +10,31 @@
 
 </head>
 <body>
-	<h1>MIAO</h1>
 
+
+<?php
+
+session_start();
+
+var_dump($_POST);
+
+
+if (in_array('item', $_POST)) {
+
+	$_SESSION['items'] = $_POST['item'];
+}
+
+var_dump($_SESSION);
+
+?>
+
+
+<form action="index.php">
+	<input type="text" id="title">
+	<input type="text" id="value">
+	<button type="submit"/>
+
+	</form>
+</form>
 </body>
 </html>
