@@ -1,11 +1,13 @@
 <?php
 
 session_start();
-var_dump($_POST);
 
-if (in_array('item', $_POST)) {
+$data = json_decode($_POST);
+var_dump($data);
 
-    $_SESSION['items'] = $_POST['item'];
+if (in_array('item', $data)) {
+
+    $_SESSION['items'][] = $data['item'];
 }
 
 echo "Cart:";
