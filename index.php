@@ -10,7 +10,9 @@
 
 </head>
 <body>
-
+	<div>
+		<?php $products = json_decode(file_get_contents("data.json"), TRUE); ?>
+	</div>
 
 
 <form action="/cart.php" id="item">
@@ -26,7 +28,7 @@
 
 		// Stop form from submitting normally
 		event.preventDefault();
-
+    
 		// Get some values from elements on the page:
 		var $form = $( this ),
 			term = $form.find( "input[name='s']" ).val(),
