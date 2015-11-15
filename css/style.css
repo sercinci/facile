@@ -127,6 +127,7 @@ ul.categories_list a:hover li{
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	font-family: Arial;
+	font-weight: bold;
 	font-size: 16px;
 	color: #FFFFFF;
 	line-height: 18px;
@@ -182,4 +183,38 @@ input{
 	border: 1px solid #14AFF0;
 	padding: 8px 12px;
 	margin: 10px 10px;
+}
+
+.riepilogo_product{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+	color: #202020;
+	line-height: 18px;
+	margin-bottom: 3px;
+}
+
+.riepilogo_price{
+	font-family: Arial;
+	font-weight: 400;
+	font-size: 13px;
+	color: #797979;
+	line-height: 14px;
+}
+
+h3.checkout_price{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 30px;
+	color: #72B62F;
+	line-height: 34px;
+}
+
+h3.negative_price{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 30px;
+	color: #FF5722;
+	line-height: 34px;
+	text-decoration: line-through;
 }

@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 $itemToAdd = json_decode(file_get_contents('php://input'));
@@ -13,8 +12,8 @@ if ($itemToAdd && count($itemToAdd) > 0) {
     }
 
     asort($marketPrices);
-+    $_SESSION['items'][] = $itemToAdd;
-    
+    $_SESSION['items'][] = $itemToAdd;
+    $_SESSION['marketPrices'] = $marketPrices;
 }
 
 echo json_encode($marketPrices);
