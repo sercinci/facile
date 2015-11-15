@@ -61,7 +61,26 @@
 			</div>
 		</div>
     </div>
-	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 subheader">
+				Lista della spesa: confronta i prodotti
+			</div>
+		</div>
+    </div>
+    
+    <div class="container">
+		<div class="row">
+			<div class="col-md-12 lined_subheader">
+				
+				<img src="assets/Carrello.png" style="float: left; margin-top: 7px;">
+				
+				<button type="button" class="btn btn-primary btn-lg checkout" data-toggle="modal" data-target="#myModal">
+				CheckOut
+				</button>
+			</div>
+		</div>
+    </div>
 	<!--     ************************ Menu Laterale ************************ -->
     
     <div class="container">
@@ -85,8 +104,8 @@
 						<img src="<?= $items[$i]['image'];?>">
 						<h2><?= $items[$i]['title'];?></h2>
 						<p><?= $items[$i]['description'];?></p>
-						<h3><?= $items[$i]['prices'][0]['value'];?>€</h3>					
-						<a class="btn btn-default" role="button" id="item<?=$i?>">Aggiungi <?= $items[$i]['title']; ?> al carrello</a>
+						<h3><?= number_format($items[$i]['prices'][0]['value'],$decimals=2);?>€</h3>					
+						<a class="btn btn-default" role="button" id="item<?=$i?>">Aggiungi al carrello</a>
 					</div>
 					<script>
 						// Attach a submit handler to the form
@@ -107,6 +126,9 @@
 								console.log(content);
 								$( "#result" ).empty().append( content );
 							});
+
+							$.('#item<?=$i?>').toggleClass(remove);
+							$.('#item<?=$i?>').html("Rimuovi");
 						});
 					</script>
 				<?php if(($i+1)%3 == 0){?>
@@ -117,6 +139,40 @@
 		</div>
     </div>
     
+    <!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title" id="myModalLabel">Inserisci i tuoi dati</h4>
+	      </div>
+	      <div class="modal-body">
+	       <div class="row">
+		   		<div class="col-md-6">
+			   		<form>
+				   		<label>Nome</label>
+				   		<input type="text"></br>
+				   		<label>Cognome</label>
+				   		<input type="text"></br>
+				   		<label>email</label>
+				   		<input type="email"></br>
+				   		<label>CAP</label>
+				   		<input type="text">
+			   		</form>
+		   		</div>
+		   		<div class="col-md-6" style="padding: 15px; background: #f2f2f2;"><h3>Facile.it è gratis</h3>
+
+Confrontiamo i prezzi di oltre <b>dieci catene di supermercati</b>: scegli la spesa più conveniente per te senza alcun costo aggiuntivo.</br></br>
+
+Puoi <b>risparmiare fino al 30% sulla spesa.</b></div>
+        	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Prosegui</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
     <div class="container">
 		<div class="row">
 			<div class="col-md-12">

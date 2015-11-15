@@ -290,7 +290,7 @@
   {
     "title": "Arachidi",
     "image": "http://bebservizi.com/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/a/r/arachidi-salati.jpg",
-    "description": "Classici Arachidi Tostatie Salati Cameo. Proposti in confezione da 43g sottovuoto.",
+    "description": "Arachidi salati Cameo",
     "category": "snacks",
     "prices": [
       {
@@ -386,7 +386,7 @@
   {
     "title": "Cereali croccanti",
     "image": "http://www.kelloggs.it/content/dam/workarea/assetpushqueue/images/web-raw-approved/std.lang.all/22/18/prod_img-4472218.jpg.thumb.319.319.png",
-    "description": "kelloggsCerealicroccanticoncioccolatoenoccioleconaggiuntadivitamineniacina,B6,B2,B1,acidofolico,B12eferro.",
+    "description": "Kelloggs cereali cioccolato",
     "category": "cereali",
     "prices": [
       {
@@ -434,7 +434,7 @@
   {
     "title": "Yogurt Muller",
     "image": "http://www.opinioni.it/img/muller-mix.jpg",
-    "description": "Muller mix, yogurt bianco con anelli di cioccolato",
+    "description": "Muller yogurt bianco",
     "category": "latticini",
     "prices": [
       {
@@ -530,7 +530,7 @@
   {
     "title": "Zucchine",
     "image": "http://jolife.info/thumb.php?src=http://jolife.info/business/_uploads/products/32/1397669723.png&w=450&h=300",
-    "description": "Zucchine provenienti dalla Spagna, 1kg",
+    "description": "Zucchine dalla Spagna, 1kg",
     "category": "frutta e verdura",
     "prices": [
       {
@@ -626,7 +626,7 @@
   {
     "title": "Carote",
     "image": "http://www.ilcentesimo.it/news/wp-content/uploads/2015/08/carote_0.jpg",
-    "description": "Carote provenienti dalla Spagna, 1kg",
+    "description": "Carote dalla Spagna, 1kg",
     "category": "frutta e verdura",
     "prices": [
       {
@@ -674,7 +674,7 @@
   {
     "title": "Biscotti Mulino",
     "image": "http://www.mulinobianco.it/image/image_gallery?uuid=cb7cfc77-a370-40d6-b589-cc7f35b0c9eb&groupId=10760&t=1430123376445",
-    "description": "Biscotti nascondini, Mulino Bianco con cioccolato da mordere",
+    "description": "Biscotti Mulino Bianco",
     "category": "biscotti",
     "prices": [
       {
@@ -722,7 +722,7 @@
   {
     "title": "Biscotti Pan di stelle",
     "image": "http://www.frhome.it/product/224/biscotto-top.png",
-    "description": "Biscotti pan di stelle, Mulino Bianco",
+    "description": "Biscotti pan di stelle",
     "category": "biscotti",
     "prices": [
       {
@@ -770,7 +770,7 @@
   {
     "title": "Cracker Gran Pavesi",
     "image": "http://www.ilfattoalimentare.it/wp-content/uploads/2013/05/granPavesi-farciti-pomodoro.jpg",
-    "description": "Gran Pavesi, nuovi cracker sandwich ripieni formaggio e pomodoro",
+    "description": "Crackers Gran Pavesi",
     "category": "snacks",
     "prices": [
       {
@@ -866,7 +866,7 @@
   {
     "title": "Succo Pera",
     "image": "http://www.laspesamadeinbo.com/public/zoom_17728317_SUCCO_ALLA_PERA_VALFRUTTA_CONF._X6_-_BRICK_275.jpg",
-    "description": "Succo alla pera, Valfrutta, confezione da 6",
+    "description": "Succo alla pera, Valfrutta",
     "category": "Bevande",
     "prices": [
       {
@@ -1010,7 +1010,7 @@
   {
     "title": "Schiacciatine",
     "image": "https://www.buitoni.it/wp-content/uploads/schiacciatine_rosm_600.jpg",
-    "description": "Schiacciatine al rosmarino, Buitoni 300g (in 8 pratiche confezioni)",
+    "description": "Schiacciatine al rosmarino, Buitoni",
     "category": "snacks",
     "prices": [
       {
@@ -1106,7 +1106,7 @@
   {
     "title": "Uova",
     "image": "http://www.tedaldi.it/downloads/images/foto%20presentazione%206%20uova.jpg",
-    "description": "Uove biologiche Tedaldi, confezione da 6",
+    "description": "Uove biologiche Tedaldi",
     "category": "prodotti freschi",
     "prices": [
       {
@@ -1202,7 +1202,7 @@
   {
     "title": "Caramelle",
     "image": "https://eidoslaforzadelleidee.files.wordpress.com/2012/11/cola2.jpg",
-    "description": "Caramelle gommose Haribo, gusto coca-cola",
+    "description": "Caramelle gommose Haribo",
     "category": "snacks",
     "prices": [
       {
@@ -1488,8 +1488,8 @@
     ]
   },
   {
-    "title": "Bastoncini di Merluzzo",
-    "image": "http://www.opinioni.it/img/bastoncini-di-merluzzo-findus.jpg",
+    "title": "Merluzzo",
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnh19GlmzKD57b8ePBPyONfd31fHM2gpdoD4Y0qdWTxWpGT9eq",
     "description": "Filetti di merluzzo Findus, 18 pezzi",
     "category": "surgelati",
     "prices": [
@@ -1634,7 +1634,7 @@
   {
     "title": "Aceto Balsamico",
     "image": "http://www.ponti.com/public/imgprodotti/Balsamici/big/4523big.jpg",
-    "description": "Aceto Balsamico di Modena IGP Ponti Bottiglia DOC",
+    "description": "Aceto Balsamico di Modena IGP",
     "category": "condimenti",
     "prices": [
       {
@@ -2066,7 +2066,7 @@
   {
     "title": "Minestrone",
     "image": "http://www.knorr.it/cms/imgwww/minestrone_scheda.jpg",
-    "description": "Minestrone knorr di 11 verdure selezionate",
+    "description": "Minestrone knorr di 11 verdure",
     "category": "scatolame",
     "prices": [
       {
@@ -2160,9 +2160,9 @@
     ]
   },
   {
-    "title": "Passata di pomodoro",
+    "title": "Passata",
     "image": "https://rsbackend.blob.core.windows.net/product/Passata-di-pomodoro-al-basilico-Mutti_8d03a81c5af9482.jpg",
-    "description": "Passata di pomodoro Mutti con basilico",
+    "description": "Passata di pomodoro Mutti",
     "category": "scatolame",
     "prices": [
       {
@@ -2210,7 +2210,7 @@
   {
     "title": "Grana Padano",
     "image": "http://www.formaggio.it/wp-content/uploads/2013/07/Grana-Padano-oltre-16-mesi-101.jpg",
-    "description": "Grana Padano stagionato oltre 16 mesi, 1kg",
+    "description": "Grana Padano stagionato, 1kg",
     "category": "formaggi",
     "prices": [
       {

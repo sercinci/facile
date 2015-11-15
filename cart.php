@@ -13,8 +13,7 @@ if ($itemToAdd && count($itemToAdd) > 0) {
     }
 
     asort($marketPrices);
-    $_SESSION['marketPrices'] = $marketPrices;
-    $_SESSION['items'][] = $itemToAdd;
++    $_SESSION['items'][] = $itemToAdd;
     
 }
 

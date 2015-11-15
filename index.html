@@ -38,7 +38,21 @@
     
     <div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 subheader">
+				Lista della spesa: confronta i prodotti
+			</div>
+		</div>
+    </div>
+    
+    <div class="container">
+		<div class="row">
+			<div class="col-md-12 lined_subheader">
+				
+				<img src="assets/Carrello.png" style="float: left; margin-top: 7px;">
+				
+				<button type="button" class="btn btn-primary btn-lg checkout" data-toggle="modal" data-target="#myModal">
+				CheckOut
+				</button>
 			</div>
 		</div>
     </div>
@@ -49,22 +63,34 @@
 		<div class="col-md-3 spacing">
 			<ul class="categories_list">
 				<li class="li_header">Categorie</li>
-				<li><a href="#">Categoria Uno</a></li>
-				<li><a href="#">Categoria Uno</a></li>
-				<li><a href="#">Categoria Uno</a></li>
-				<li><a href="#">Categoria Uno</a></li>
-				<li><a href="#">Categoria Uno</a></li>
-				<li><a href="#">Categoria Uno</a></li>
-				<li><a href="#">Categoria Uno</a></li>
+				<a href="#"><li>Categoria Uno</li></a>
 			</ul>
 		</div>
     
     <!--     ************************ Contenitore Label ************************ -->
     
-		<div class="col-md-9 spacing">
-			<div class="row">
+		<div class="col-md-9 spacing cf">
+			<div class="row cf">
 				<div class="product cf">
-					<img src="">
+					<img src="assets/SaveMoney.png">
+					<h2>Nome Prodotto</h2>
+					<p>descrizione prodotto</p>
+					<h3>00,00€</h3>
+					
+					<a class="btn btn-default" href="#" role="button">Aggiungi al carrello</a>
+				</div>
+				
+				<div class="product cf">
+					<img src="assets/SaveMoney.png">
+					<h2>Nome Prodotto</h2>
+					<p>descrizione prodotto</p>
+					<h3>00,00€</h3>
+					
+					<a class="btn btn-default" href="#" role="button">Aggiungi al carrello</a>
+				</div>
+				
+				<div class="product cf">
+					<img src="assets/SaveMoney.png">
 					<h2>Nome Prodotto</h2>
 					<p>descrizione prodotto</p>
 					<h3>00,00€</h3>
@@ -74,6 +100,41 @@
 			</div>
 		</div>
     </div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title" id="myModalLabel">Inserisci i tuoi dati</h4>
+	      </div>
+	      <div class="modal-body">
+	       <div class="row">
+		   		<div class="col-md-6">
+			   		<form>
+				   		<label>Nome</label>
+				   		<input type="text"></br>
+				   		<label>Cognome</label>
+				   		<input type="text"></br>
+				   		<label>email</label>
+				   		<input type="email"></br>
+				   		<label>CAP</label>
+				   		<input type="text">
+			   		</form>
+		   		</div>
+		   		<div class="col-md-6" style="padding: 15px; background: #f2f2f2;"><h3>Facile.it è gratis</h3>
+
+Confrontiamo i prezzi di oltre <b>dieci catene di supermercati</b>: scegli la spesa più conveniente per te senza alcun costo aggiuntivo.</br></br>
+
+Puoi <b>risparmiare fino al 30% sulla spesa.</b></div>
+        	</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Prosegui</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
     
     <div class="container">
 		<div class="row">
@@ -87,5 +148,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/retina.js"></script>
   </body>
 </html>
