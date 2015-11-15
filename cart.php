@@ -14,6 +14,7 @@ if ($itemToAdd && count($itemToAdd) > 0) {
 
     asort($marketPrices);
     $_SESSION['items'][] = $itemToAdd;
+    $_SESSION['marketPrices'] = $marketprices;
 }
 
 echo json_encode($marketPrices);
