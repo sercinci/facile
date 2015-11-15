@@ -63,34 +63,22 @@
 				<div class="col-md-3">
 				<img class="img" alt="img_compare" src="assets/Compare.png">
 					<h3>Compara oltre 10 store</h3>
-					<p>Trova le migliori offerte del giorno, della 
-					settimana o del mese per usufruire di prezzi 
-					scontati e risparmiare fino al 40% sulla tua 
-					prossima spesa</p>
+					<p>Sfoglia e compara i prodotti delle 10 più importanti catene italiane con un click.</p>
 				</div>
 				<div class="col-md-3">
 				<img class="img" alt="img_SaveMoney" src="assets/SaveMoney.png">
 				<h3>Risparmia fino al 30%</h3>
-					<p>Trova le migliori offerte del giorno, della 
-					settimana o del mese per usufruire di prezzi 
-					scontati e risparmiare fino al 40% sulla tua 
-					prossima spesa</p>
+					<p>I prodotti che hai scelto te li garantiamo al miglior prezzo, sempre.</p>
 				</div>
 				<div class="col-md-3">
 				<img class="img" alt="img_SaveTheList" src="assets/SaveTheList.png">
 					<h3>Salva la tua spesa</h3>
-					<p>Trova le migliori offerte del giorno, della 
-					settimana o del mese per usufruire di prezzi 
-					scontati e risparmiare fino al 40% sulla tua 
-					prossima spesa</p>
+					<p> La tua lista della spesa sempre pronta nel tuo profilo. Te la ricordiamo noi ogni volta che ne hai bisogno.</p>
 				</div>
 				<div class="col-md-3">
 				<img class="img" alt="img_facile" src="assets/BestDeals.png">
 					<h3>Le migliori offerte</h3>
-					<p>Trova le migliori offerte del giorno, della 
-					settimana o del mese per usufruire di prezzi 
-					scontati e risparmiare fino al 40% sulla tua 
-					prossima spesa</p>
+					<p>Trova le migliori offerte della giornata, della settimana e del mese.</p>
 				</div>
 			</div>	
 		</div>
