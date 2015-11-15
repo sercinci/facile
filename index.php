@@ -11,10 +11,17 @@
 </head>
 <body>
 
+<?php
 
-<div id="1" data=""></div>
+	$db = file_get_contents(__DIR__ . "/data.json");
 
-<form action="/cart.php" id="item">
+	$items = json_decode($db);
+
+	var_dump($items);
+
+?>
+
+<form id="item">
 	<input type="text" name="s" placeholder="Search...">
 	<input type="submit" value="Add Product Item">
 </form>
